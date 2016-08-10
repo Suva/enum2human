@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/Suva/enum2human.svg?branch=master)](https://travis-ci.org/Suva/enum2human)
 enum2human
 ==========
 
