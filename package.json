@@ -1,6 +1,6 @@
 {
   "name": "enum2human",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Convert java ENUM_STYLE strings to \"Human readable\" strings.",
   "main": "index.js",
   "scripts": {

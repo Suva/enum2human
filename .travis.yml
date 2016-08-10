@@ -4,5 +4,8 @@ node_js:
 - '4'
 deploy:
   provider: npm
+  email: clysuva@gmail.com
   api_key:
     secure: R+vs9m2c8YxshqHUkmDBEixw3vYX9sEf9/j71iek8j0s0tPpbsGUCeGxhBfbEqMC19Ho+92Lar5Yw9Nq98uGeIelB69a+gnexso7HxCCWM1oCmuNegtdlzMS9RrrCfsUUEuQ4617QSMRHkhB0/nTxLUImgzjNSjqgrUPFhaKVKZQHA5/XxRV3oCFtEaF4q7aLWNAkbi14j/ncRbDFzcgMhZxHswUNcB+2Huj+AbM6MeY1G87q6hFOArfjrpzT3AKNuTa+3OzAvx31oRYvRbOkC9/ibLu9drmOyzWANfnlYDjXLQEnSp4k4VgZl22TaA06mQtOqeErO1j/Qz/eneoRgKWJCGVXHedkxowmREqkYGtLz8oJdCIEAPnKbNVKYNVhwMCKoiV8jbFb5uoVl5RinWK6FOjKce3BaxkwKK/bhrUBKIQcCLcqJXwNva/LloEU1TmXZCJEOf61AYB50n2Af2ZI8eIOYCuaSAGt6RzJAM9atPnWsvuVkSzCBF8ixXQV/RptHLeTxQixnFd7ze2xDpFwfRmxDghEdh+NaowU5j9TwlBcGJ7EwEvScmqqpabnM6cCwllWCXDPL9GWOIfSl0YeyeCN0p5/xvIOR9R4PuaJcMUwWWW0kzmAtU0477LMZ9+zfloiaNXfTzPVx7oxDZJgMrKVTeYtxyCxdfGnOI=
+  on:
+    branch: master
