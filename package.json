@@ -11,6 +11,10 @@
   ],
   "author": "Jaan Pullerits <clysuva@gmail.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Suva/enum2human.git"
+  },
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2"
