@@ -12,7 +12,7 @@ humanize.object = function (input) {
             value = humanize(value);
         }
 
-        if(typeof value == "object"){
+        if(typeof value == "Object"){
             value = this(value);
         }
         output[key] = value;
