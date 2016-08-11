@@ -52,4 +52,21 @@ describe("main api", function () {
             expect(e2h.object(obj)).to.deep.equal(expected);
         })
     })
+
+    describe("translations method", function () {
+        it("should tramslate fields as specified", function () {
+            var obj = {
+                education: "HIGH_BA",
+                gender: "FEMALE"
+            };
+
+            var expected = {
+                education: "Bachelor's degree",
+                gender: "Female"
+            };
+
+            e2h.translate("HIGH_BA", "Bachelor's degree");
+            expect(e2h.object(obj)).to.deep.equal(expected);
+        })
+    })
 });

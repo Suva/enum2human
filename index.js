@@ -1,4 +1,6 @@
 var convert = require("./lib/convert");
+var translations = require("./lib/translator");
+
 var ignoredFields = [];
 
 function ignored(value) {
@@ -6,6 +8,9 @@ function ignored(value) {
 }
 
 function humanize(string) {
+    var translation = translations.translate(string);
+    if (translation) return translation;
+
     return convert.convertEnum(string);
 }
 
@@ -37,5 +42,9 @@ humanize.ignoreField = function (field) {
        ignoredFields.push(field);
    }
 };
+
+humanize.translate = function (from, to) {
+    translations.add(from, to);
+}
 
 module.exports = humanize;
