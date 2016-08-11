@@ -16,7 +16,8 @@ describe("main api", function () {
                 "code": "CIE-F512",
                 "address": {
                     "city": "LONDON",
-                    "street": "Depression st."
+                    "street": "Depression st.",
+                    "nullValue": null
                 }
             };
 
@@ -27,7 +28,8 @@ describe("main api", function () {
                 "code": "CIE-F512",
                 "address": {
                     "city": "London",
-                    "street": "Depression st."
+                    "street": "Depression st.",
+                    "nullValue": null
                 }
             };
 

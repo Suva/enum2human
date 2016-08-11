@@ -5,7 +5,11 @@ function humanize(string) {
 }
 
 humanize.object = function (input) {
-    var output = {}
+    if(input == null)
+        return null;
+
+    var output = (Array.isArray(input)) ? [] : {};
+
     for(var key in input) {
         var value = input[key];
         if(typeof value == "string" && value.match(/^[A-Z0-9_]+$/)){
