@@ -13,14 +13,22 @@ describe("main api", function () {
                 "name": "Jack",
                 "job": "programmer",
                 "gender": "MALE",
-                "code": "CIE-F512"
+                "code": "CIE-F512",
+                "address": {
+                    "city": "LONDON",
+                    "street": "Depression st."
+                }
             };
 
             const expected = {
                 "name": "Jack",
                 "job": "programmer",
                 "gender": "Male",
-                "code": "CIE-F512"
+                "code": "CIE-F512",
+                "address": {
+                    "city": "London",
+                    "street": "Depression st."
+                }
             };
 
             expect(e2h.object(source)).to.deep.equal(expected);

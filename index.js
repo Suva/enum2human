@@ -12,8 +12,8 @@ humanize.object = function (input) {
             value = humanize(value);
         }
 
-        if(typeof value == "Object"){
-            value = this(value);
+        if(typeof value == "object"){
+            value = this.object(value);
         }
         output[key] = value;
     }
