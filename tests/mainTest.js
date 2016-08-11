@@ -36,4 +36,20 @@ describe("main api", function () {
             expect(e2h.object(source)).to.deep.equal(expected);
         })
     });
+    describe("ignoreField method", function () {
+        it("should ignore fields in object which are specified", function () {
+            var obj = {
+                notIgnored: "SHOULD_TRANSFORM",
+                reallyBold: "SHOULD_STAY"
+            };
+
+            var expected = {
+                notIgnored: "Should transform",
+                reallyBold: "SHOULD_STAY"
+            };
+
+            e2h.ignoreField("reallyBold");
+            expect(e2h.object(obj)).to.deep.equal(expected);
+        })
+    })
 });
