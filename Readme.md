@@ -28,7 +28,24 @@ var title = e2h("HOLY_COW_DO_UPPERCASE_CHARACTERS_RULE");
 
 enum2human also provides method to recursively humanize entire objects:
 ```javascript
-var e2h = require("enum2human");
+var humanObject = e2h.object(inhumanObject);
+```
+
+You can specify which fields to ignore in object conversion:
+```javascript
+e2h.ignoreField("securityCode")
+var humanObject = e2h.object(inhumanObject);
+```
+
+You can specify which fields to ignore in object conversion:
+```javascript
+e2h.ignoreField("securityCode")
+var humanObject = e2h.object(inhumanObject);
+```
+
+You can provide manual translation to some strings:
+```javascript
+e2h.translate("HIGH_BA", "Bachelor's degree");
 var humanObject = e2h.object(inhumanObject);
 ```
 
